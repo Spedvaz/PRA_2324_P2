@@ -1,8 +1,10 @@
-template <typename valor>
+#include <vector>
+#include <iostream>
+template <typename T>
 
-valor BusquedaBinaria(val x, std::vector<valor> V, int ini, int fin){
+int BusquedaBinaria(T X, std::vector<T>& V, int ini, int fin){
 	if(ini > fin){
-		std::cout << "No se encuentra el array" << endl;
+		std::cout << "No se encuentra el array" << std::endl;
 		return -1;
 	}
 	int medio = (ini + fin) / 2;
